@@ -12,12 +12,6 @@
     dest: /tmp/picom
     recursive: yes
 
-- name: Ensure libpcre3-dev is installed
-  apt:
-    name: libpcre3-dev
-    state: present
-    update_cache: yes
-
 - name: Picom | Build and Install picom
   become: yes
   shell: "cd /tmp/picom && meson --buildtype=release . build && ninja -C build && sudo ninja -C build install"
