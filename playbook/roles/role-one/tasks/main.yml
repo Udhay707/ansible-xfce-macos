@@ -1,27 +1,27 @@
 ---
 
-- include_tasks: general-changes.yml
+#- include_tasks: general-changes.yml
 
-- include_tasks: theme-icon-cursor-font.yml
+#- include_tasks: theme-icon-cursor-font.yml
 
-- include_tasks: global-menu.yml
+#- include_tasks: global-menu.yml
 
-- include_tasks: xfce-panel-menu.yml
+#- include_tasks: xfce-panel-menu.yml
 
-- include_tasks: xfce-panel-plugins.yml
+#- include_tasks: xfce-panel-plugins.yml
 
-- include_tasks: plank-dock.yml
+#- include_tasks: plank-dock.yml
 
-- include_tasks: rofi-launcher.yml
+#- include_tasks: rofi-launcher.yml
 
-- include_tasks: ulauncher.yml
-  when: enable_ulauncher
+#- include_tasks: ulauncher.yml
+#  when: enable_ulauncher
 
-- include_tasks: conky.yml
-  when: enable_conky
+#- include_tasks: conky.yml
+#  when: enable_conky
 
-- include_tasks: lightdm-greeter.yml
-  when: enable_lightdm
+#- include_tasks: lightdm-greeter.yml
+#  when: enable_lightdm
 
 - include_tasks: picom-compositor.yml
   when: enable_picom
