@@ -19,7 +19,7 @@
 
 - name: Comice Control center | Install pip dependencies
   shell:
-    cmd: "cd {{ home_directory }}/Downloads/comice-control-center && python3 -m venv .venv && source .venv/bin/activate && pip3 install -r requirements.txt"
+    cmd: "cd {{ home_directory }}/Downloads/comice-control-center && python3 -m venv .venv && source .venv/bin/activate"
 
 - name: Comice Control center | Add Launcher - plugin-31
   xfconf:
