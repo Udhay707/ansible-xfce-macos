@@ -23,10 +23,10 @@
 #- include_tasks: lightdm-greeter.yml
 #  when: enable_lightdm
 
-- include_tasks: picom-compositor.yml
-  when: enable_picom
+#- include_tasks: picom-compositor.yml
+#  when: enable_picom
 
-- include_tasks: customize-firefox.yml
+#- include_tasks: customize-firefox.yml
 
 - include_tasks: xfce-terminal.yml
 
