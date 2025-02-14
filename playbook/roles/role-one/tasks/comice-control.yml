@@ -1,21 +1,21 @@
 ---
 
-- name: Comice Control center | Install dependencies
-  become: yes
-  apt:
-    name:
-      - python3
-      - python3-dbus
-      - util-linux
-      - gsettings-desktop-schemas
-      - wireless-tools
-      - iproute2
-      - alsa-utils
+#- name: Comice Control center | Install dependencies
+#  become: yes
+#  apt:
+#    name:
+#      - python3
+#      - python3-dbus
+#      - util-linux
+#      - gsettings-desktop-schemas
+#      - wireless-tools
+#      - iproute2
+#      - alsa-utils
 
-- name: Comice Control center | Clone git repository
-  git:
-    repo: "{{ comice_control_git }}"
-    dest: "{{ home_directory }}/Downloads/comice-control-center"
+#- name: Comice Control center | Clone git repository
+#  git:
+#    repo: "{{ comice_control_git }}"
+#    dest: "{{ home_directory }}/Downloads/comice-control-center"
 
 - name: Comice Control center | Install pip dependencies
   shell:
