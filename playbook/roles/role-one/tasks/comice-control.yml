@@ -17,9 +17,9 @@
 #    repo: "{{ comice_control_git }}"
 #    dest: "{{ home_directory }}/Downloads/comice-control-center"
 
-- name: Comice Control center | Install pip dependencies
-  shell:
-    cmd: "cd {{ home_directory }}/Downloads/comice-control-center && source .venv/bin/activate"
+#- name: Comice Control center | Install pip dependencies
+#  shell:
+#    cmd: "cd {{ home_directory }}/Downloads/comice-control-center && source .venv/bin/activate"
 
 - name: Comice Control center | Add Launcher - plugin-31
   xfconf:
