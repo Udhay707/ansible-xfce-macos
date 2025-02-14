@@ -28,7 +28,7 @@
 
 #- include_tasks: customize-firefox.yml
 
-- include_tasks: xfce-terminal.yml
+#- include_tasks: xfce-terminal.yml
 
 - include_tasks: comice-control.yml
   when: enable_comice_control
